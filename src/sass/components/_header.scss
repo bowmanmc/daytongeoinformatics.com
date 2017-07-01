@@ -1,6 +1,9 @@
 // Header component on the front page
 header {
-    background: $clr-dark;
+    background-color: $clr-dark;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15)), url(../images/nightlights-2048.jpg);
+    background-size: cover;
+    color: $clr-white;
     min-height: 66%;
     padding: 2.0em;
 }
