@@ -1,0 +1,15 @@
+
+footer {
+    background: $clr-dark;
+    border-top: 1px solid darken($clr-dark, 5%);
+    color: $clr-light;
+    margin-top: 2.0em;
+    min-height: 400px;
+    padding: 1.0em;
+}
+
+.footer__logo {
+    fill: $clr-light;
+    height: 80px;
+    width: 300px;
+}
