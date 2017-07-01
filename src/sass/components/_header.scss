@@ -1,0 +1,12 @@
+// Header component on the front page
+header {
+    background: $clr-dark;
+    min-height: 66%;
+    padding: 2.0em;
+}
+
+.header__logo {
+    fill: $clr-highlight;
+    height: 80px;
+    width: 300px;
+}
