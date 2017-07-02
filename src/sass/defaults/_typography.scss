@@ -10,8 +10,9 @@ $fontstack-body: $system;
 $fontstack-headings: $futura;
 
 body {
-    font-size: 18px;
-    line-height: 1.5em;
+    font-family: $fontstack-body;
+    font-size: 20px;
+    line-height: 1.15em;
 }
 
 h1,

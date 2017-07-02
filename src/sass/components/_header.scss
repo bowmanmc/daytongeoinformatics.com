@@ -6,10 +6,20 @@ header {
     color: $clr-white;
     min-height: 66%;
     padding: 2.0em;
+    text-align: center;
+
+    @include media($desktop) {
+        text-align: left;
+    }
 }
 
 .header__logo {
     fill: $clr-highlight;
-    height: 80px;
-    width: 300px;
+    height: 60px;
+    width: 230px;
+
+    @include media($desktop) {
+        height: 100px;
+        width: 382px;
+    }
 }
