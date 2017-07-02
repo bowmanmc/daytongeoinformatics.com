@@ -1,4 +1,6 @@
 
+$footer-link-hover: lighten($clr-highlight, 15%);
+
 footer {
     background: $clr-dark;
     color: $clr-light;
@@ -6,6 +8,16 @@ footer {
     margin-top: 2.0em;
     min-height: 400px;
     padding: 1.0em;
+
+    a {
+        color: $clr-highlight;
+        text-decoration: none;
+
+        &:hover {
+            color: $footer-link-hover;
+            text-decoration: underline;
+        }
+    }
 }
 
 .footer__logo {
