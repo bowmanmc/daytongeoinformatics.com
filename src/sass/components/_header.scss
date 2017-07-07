@@ -15,11 +15,11 @@ header {
 
 .header__logo {
     fill: $clr-highlight;
-    height: 60px;
-    width: 230px;
+    height: $logo-mark-height / 2;
+    width: $logo-mark-width / 2;
 
     @include media($desktop) {
-        height: 100px;
-        width: 382px;
+        height: $logo-mark-height / 1.5;
+        width: $logo-mark-width / 1.5;
     }
 }

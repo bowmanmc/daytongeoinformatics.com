@@ -21,9 +21,19 @@ footer {
 }
 
 .footer__logo {
+    display: block;
     fill: $clr-light;
-    height: 60px;
-    width: 230px;
+    height: $logo-mark-height / 3;
+    width: $logo-mark-width / 3;
+
+    @include media($desktop) {
+        height: $logo-mark-height / 2;
+        width: $logo-mark-width / 2;
+    }
+
+    use {
+        margin: 0;
+    }
 }
 
 .footer__content {
