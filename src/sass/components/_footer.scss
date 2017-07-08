@@ -5,9 +5,8 @@ footer {
     background: $clr-dark;
     color: $clr-light;
     font-size: 0.9rem;
-    margin-top: 2.0em;
     min-height: 400px;
-    padding: 1.0em;
+    padding: 1.5em;
 
     a {
         color: $clr-highlight;
@@ -20,22 +19,6 @@ footer {
     }
 }
 
-.footer__logo {
-    display: block;
-    fill: $clr-light;
-    height: $logo-mark-height / 3;
-    width: $logo-mark-width / 3;
-
-    @include media($desktop) {
-        height: $logo-mark-height / 2;
-        width: $logo-mark-width / 2;
-    }
-
-    use {
-        margin: 0;
-    }
-}
-
 .footer__content {
     @include outer-container(100%);
 
@@ -45,6 +28,29 @@ footer {
 
         @include media($desktop) {
             @include span-columns(4);
+        }
+    }
+}
+
+.footer__copy {
+    color: $clr-gray-70;
+    font-size: 0.75em;
+    padding-top: 2.0em;
+}
+
+.footer__logo {
+    padding: 1.0em 0;
+
+    svg {
+        display: block;
+        fill: $clr-light;
+        max-height: $logo-mark-height / 3;
+        max-width: $logo-mark-width / 3;
+        width: 100%;
+
+        @include media($desktop) {
+            height: $logo-mark-height / 2;
+            width: $logo-mark-width / 2;
         }
     }
 }
