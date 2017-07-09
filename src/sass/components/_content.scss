@@ -1,5 +1,15 @@
 .content {
     background: $clr-gray-90;
     color: $clr-gray-15;
-    padding: 2.0em 1.0em;
+    padding: 1.0em;
+    padding-bottom: 3.0em;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $clr-highlight-alt;
+    }
 }
