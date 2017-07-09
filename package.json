@@ -16,11 +16,14 @@
     "build": "npm-run-all sass jekyll",
     "prestart": "npm run build",
     "start": "npm-run-all --parallel server:dev watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "node tools/writeVersionTxt.js",
+    "predeploy": "npm-run-all build version",
+    "deploy": "s3-deploy './build/**' --cwd './build/' --region us-east-1 --bucket www.daytongeo.us"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bowmanmc/daytongeoinformatics.com.git"
+    "url": "git+https://github.com/bowmanmc/www.daytongeo.us.git"
   },
   "author": "Dayton Geoinformatics",
   "bugs": {
@@ -45,7 +48,8 @@
     "postcss-cli": "^4.1.0",
     "rimraf": "^2.6.1",
     "s3-deploy": "^0.7.5",
-    "sass-lint": "^1.10.2"
+    "sass-lint": "^1.10.2",
+    "sync-exec": "^0.6.2"
   },
   "babel": {
     "presets": [
