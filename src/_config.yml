@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Dayton Geoinformatics
-email: michael@daytongeoinformatics.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+email: michael@daytongeo.us
+description: >
+  Dayton Geoinformatics provides expert software engineering services to the
+  intelligence community and DoD. Focused on the development of web-based
+  mapping and data visualization applications.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://www.daytongeoinformatics.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.daytongeo.us" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown

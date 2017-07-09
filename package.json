@@ -1,7 +1,7 @@
 {
   "name": "daytongeoinformatics.com",
-  "version": "1.0.0",
-  "description": "Website for www.daytongeoinformatics.com",
+  "version": "1.1.0",
+  "description": "Website for www.daytongeo.us",
   "scripts": {
     "jekyll": "jekyll build --incremental --source src --destination build",
     "lint:sass": "sass-lint -c .sass-lint.yml -v",
