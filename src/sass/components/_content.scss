@@ -1,8 +1,13 @@
-.content {
+main {
     background: $clr-gray-90;
     color: $clr-gray-15;
     padding: 1.0em;
     padding-bottom: 3.0em;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: $desktop-width;
 
     h1,
     h2,
