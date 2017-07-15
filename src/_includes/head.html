@@ -9,8 +9,6 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="keywords" content="Dayton Geoinformatics, Dayton, Geoinformatics, Contractor, Software Development, JavaScript, Python, Angular, React, D3, Data Visualization, GIS, Web Mapping, Web Development" />
 
-    <link rel="stylesheet" href="styles/bundle.min.css" />
-
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
@@ -28,4 +26,7 @@
     <meta property="og:url" content="http://www.daytongeo.us">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+    <style>{% include styles.min.css %}</style>
+
 </head>

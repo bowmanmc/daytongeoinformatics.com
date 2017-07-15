@@ -59,6 +59,7 @@ typings/
 
 build
 src/styles
+src/_includes/styles*
 .sass-cache
 .jekyll-metadata
 .DS_Store
