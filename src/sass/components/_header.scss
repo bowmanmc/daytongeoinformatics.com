@@ -1,48 +1,62 @@
 // Header component on the front page
+$logo-width: 489px;
+$logo-height: 137px;
+
 header {
-    background-color: $clr-black;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url(../images/nightlights-1024.jpg);
+    background-color: $clr-dark;
+    background-image: url(../images/darkmap-us-lo.jpg);
     background-size: cover;
-    color: $clr-white;
-    display: flex;
-    flex-direction: column;
-    min-height: 66%;
-    padding: 2.0em;
-    text-align: center;
+    min-height: 65%;
+    position: relative;
 
     @include media($desktop) {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url(../images/nightlights-2048.jpg);
+        background-image: url(../images/darkmap-us-hi.jpg);
         text-align: left;
     }
-}
 
-.header__logo {
-    flex: 0.66;
-
-    svg {
-        fill: $clr-highlight;
-        max-height: $logo-mark-height / 2;
-        max-width: $logo-mark-width / 2;
+    .header__particles {
+        height: 100%;
+        position: absolute;
         width: 100%;
+        z-index: 0;
+    }
 
-        @include media($desktop) {
-            height: $logo-mark-height / 1.5;
-            max-height: $logo-mark-height / 1.5;
-            max-width: $logo-mark-width / 1.5;
-            width: $logo-mark-width / 1.5;
+    .header__content {
+        color: $clr-white;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 2.0em;
+        position: absolute;
+        width: 100%;
+    }
+
+    .header__logo {
+        flex: 1;
+        z-index: 1000;
+
+        svg {
+            fill: $clr-white;
+            height: $logo-height / 2.5;
+            width: $logo-width / 2.5;
+
+            @include media($desktop) {
+                height: $logo-height / 1.75;
+                width: $logo-width / 1.75;
+            }
         }
     }
-}
 
-.header__tagline {
-    color: $clr-highlight;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.15em;
-    text-align: center;
-    text-shadow: 0 0 32px $clr-black;
+    .header__tagline {
+        color: $clr-white;
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.15em;
+        text-align: right;
+        z-index: 1000;
 
-    @include media($desktop) {
-        font-size: 3.0em;
+        @include media($desktop) {
+            font-size: 3.0em;
+        }
     }
 }

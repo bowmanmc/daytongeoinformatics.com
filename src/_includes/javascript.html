@@ -1,0 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+<script>
+    window.onload = function() {
+        Particles.init({
+            selector: '.header__particles',
+            color: ['#F8E270', '#E18651', '#DA5D4C', '#AE3B45'],
+            connectParticles: true,
+            maxParticles: 75,
+            sizeVariations: 3,
+            speed: 0.1,
+            responsive: [{
+                breakpoint: 768,
+                options: {
+                    maxParticles: 25
+                }
+            }]
+        });
+    };
+</script>
