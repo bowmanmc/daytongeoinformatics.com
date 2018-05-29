@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "description": "Website for www.daytongeo.us",
   "scripts": {
-    "jekyll": "jekyll build --incremental --source src --destination build",
+    "jekyll": "jekyll build --source src --destination build",
     "lint:sass": "sass-lint -c .sass-lint.yml -v",
     "presass": "npm-run-all lint:sass",
     "sass": "node-sass --source-map true --include-path src/sass --include-path node_modules src/sass/main.scss src/styles/bundle.css",
@@ -19,7 +19,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "version": "node tools/writeVersionTxt.js",
     "predeploy": "npm-run-all build version",
-    "deploy": "s3-deploy './build/**' --cwd './build/' --region us-east-1 --bucket www.daytongeo.us"
+    "deploy": "s3-deploy './build/**' --cwd './build/' --region us-east-1 --bucket www.daytongeo.us",
+    "postdeploy": "babel-node tools/invalidateCache.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.5.2",
     "browser-sync": "^2.18.12",
+    "cloudfront-invalidate-cli": "^1.4.0",
     "copy-dir": "^0.3.0",
     "cssnano": "^3.10.0",
     "mkdirp": "^0.5.1",
