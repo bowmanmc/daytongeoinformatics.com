@@ -20,18 +20,18 @@ footer {
     }
 }
 
-.footer__content {
-    @include outer-container(100%);
-
-    section {
-        @include span-columns(12);
-        padding: 0;
-
-        @include media($desktop) {
-            @include span-columns(4);
-        }
-    }
-}
+// .footer__content {
+//     @include outer-container(100%);
+//
+//     section {
+//         @include span-columns(12);
+//         padding: 0;
+//
+//         @include media($desktop) {
+//             @include span-columns(4);
+//         }
+//     }
+// }
 
 .footer__copy {
     color: $clr-gray-70;

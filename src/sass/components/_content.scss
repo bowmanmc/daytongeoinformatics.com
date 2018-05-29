@@ -5,6 +5,37 @@ main {
     padding-bottom: 3.0em;
 }
 
+.button {
+    background: $clr-highlight-alt;
+    border-radius: 3px;
+    color: $clr-white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1.0em;
+    text-decoration: none;
+
+    &:hover {
+        background: $clr-highlight;
+    }
+
+    .button__contents {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        span {
+            padding-left: 0.5em;
+        }
+
+        svg {
+            fill: $clr-white;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
 .content {
     margin: 0 auto;
     max-width: $desktop-width;
