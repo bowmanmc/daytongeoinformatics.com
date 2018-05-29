@@ -4,7 +4,8 @@ $logo-height: 137px;
 
 header {
     background-color: $clr-dark;
-    background-image: url(../images/darkmap-us-lo.jpg);
+    background-image: url(../images/darkmap-oh-lo.jpg);
+    background-position: 50% 50%;
     background-size: cover;
     min-height: 65%;
     position: relative;
@@ -29,10 +30,14 @@ header {
         left: 50%;
         margin: 0 auto;
         max-width: 1024px;
-        padding: 2.0em 0;
+        padding: 2.0em;
         position: absolute;
         transform: translateX(-50%);
         width: 100%;
+
+        @include media($desktop) {
+            padding: 2.0em 0;
+        }
     }
 
     .header__logo {
