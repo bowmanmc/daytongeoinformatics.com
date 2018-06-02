@@ -47,13 +47,13 @@ footer {
     svg {
         display: block;
         fill: $clr-light;
-        max-height: $logo-mark-height / 3;
-        max-width: $logo-mark-width / 3;
+        max-height: $logo-height / 3;
+        max-width: $logo-width / 3;
         width: 100%;
 
         @include media($desktop) {
-            height: $logo-mark-height / 2;
-            width: $logo-mark-width / 2;
+            height: $logo-height / 2;
+            width: $logo-width / 2;
         }
     }
 }
