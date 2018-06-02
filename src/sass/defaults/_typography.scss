@@ -11,8 +11,8 @@ $fontstack-headings: $futura;
 
 body {
     font-family: $fontstack-body;
-    font-size: 20px;
-    line-height: 1.45em;
+    font-size: 18px;
+    line-height: 1.6em;
 }
 
 h1,
@@ -23,5 +23,6 @@ h5,
 h6 {
     font-family: $fontstack-headings;
     font-weight: bold;
-    line-height: 1.35em;
+    line-height: 1.25em;
+    margin-bottom: 0;
 }
