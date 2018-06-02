@@ -5,3 +5,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
+a {
+    color: $clr-highlight-alt;
+    font-weight: bold;
+
+    &:hover {
+        color: $clr-highlight;
+    }
+}
